@@ -2,7 +2,7 @@
 
 Overview 
 
-The "---" app is a useful search engine for songs that you can only manage to remember however many lyrics from. Maybe it's just a few words from the hook, or maybe it's an entire line of lyrics. Either way my song finder will be able to connect you to that fragmented memory. The search enginge works in relationship to how many details you can provide the application with. 
+The Find That Song app is a useful search engine for songs that you can only manage to remember however many lyrics from. Maybe it's just a few words from the hook, or maybe it's an entire line of lyrics. Either way my song finder will be able to connect you to that fragmented memory. The search enginge works in relationship to how many details you can provide the application with. 
 
 User Stories
 
@@ -21,7 +21,7 @@ Wireframes / Screenshots
 
 ![Blank board (2)](https://user-images.githubusercontent.com/120392542/214313450-b5a765e4-e207-4cc8-91b9-31ebdac8fae3.png)
 
-[Blank board.pdf](https://github.com/asundby6/project2-full-stack-app/files/10490654/Blank.board.pdf)
+![Blank board (5)](https://user-images.githubusercontent.com/120392542/214316765-0cbd590e-0910-4c1f-9454-ec2b9f77420b.png)
 
 ![Blank board (3)](https://user-images.githubusercontent.com/120392542/214315720-cd223cf0-b7ae-45a3-8655-0c65accb464e.png)
 
