@@ -2,22 +2,32 @@
 
 Overview 
 
-The "---" app is a useful way to find a more particular type of song, which doesnt relate to the genere. It is fortunate that there is a big name competitor that is most likely the only app that people know of for figuring out the name of a song. The competitor is called Shazam, which is the most, if not only in some cases, app used to find a song's name while it is playing. If you remember a life without the app, then you can understand the fruststration that comes with only knowing that one line of a forgotton song. My search filters will be the song lyrics that you managed to remember, and an optional added search parameter in which is the song's artist.
-
+The "---" app is a useful search engine for songs that you can only manage to remember however many lyrics from. Maybe it's just a few words from the hook, or maybe it's an entire line of lyrics. Either way my song finder will be able to connect you to that fragmented memory. The search enginge works in relationship to how many details you can provide the application with. 
 
 User Stories
 
 Users will be able to experience the following : 
         - Register an account
-        - Login to an account
-        - Interact with a main page that  
-        - Home page that greets you and allows the logout option
-        - Search by the lyrics that haven't allowed for any luck from base search engines 
+        - Login to an account 
+        - Logout of account
+        - User searched page that only displays when an account is made
+        - Search the lyrics to get the song name
         - Search by the artist, if it's known
-        - add to a list of successful searches
+        - add to a list of successful searches for a display to all users
  
 Wireframes / Screenshots
 
+![Blank board (1)](https://user-images.githubusercontent.com/120392542/214313438-a6992acb-d204-4446-adc6-1d41e17662d0.png)
+
+![Blank board (2)](https://user-images.githubusercontent.com/120392542/214313450-b5a765e4-e207-4cc8-91b9-31ebdac8fae3.png)
+
+[Blank board.pdf](https://github.com/asundby6/project2-full-stack-app/files/10490654/Blank.board.pdf)
+
+![Blank board (3)](https://user-images.githubusercontent.com/120392542/214315720-cd223cf0-b7ae-45a3-8655-0c65accb464e.png)
+
+![Blank board (4)](https://user-images.githubusercontent.com/120392542/214315735-0e3a85a2-1393-47d2-ba72-aac1fb9c3a49.png)
 
 
 Entity Relationship Diagrams
+
+![Blank board](https://user-images.githubusercontent.com/120392542/214310366-766ef9fd-cb07-4f31-b8a0-1b49a11f2e76.png)
