@@ -1,11 +1,12 @@
-const mongoose = require('mongoose')
+const mongoose = require('./connection')
 
 const { Schema } = mongoose
 
-const savedsongs = new Schema({
+const savedSongs = new Schema({
     owner: {
         type: Schema.Types.ObjectId,
-        ref: 'User'
+        ref: 'owner',
+        required: true
     },
     title: {
         type: String
@@ -17,17 +18,11 @@ const savedsongs = new Schema({
         type: String
     },
     lyrics: {
-        type: String
+        type: [String]
     }
 })
 
-const savedSongs = model('savedSongs', savedsongs)
-
 module.exports = savedSongs
-
-
-
-
 
 
 

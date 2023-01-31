@@ -1,6 +1,9 @@
-const mongoose = require('mongoose')
+const mongoose = require('./connection')
 
-const songlists = new mongoose.Schema({ 
+const { Schema, model } = mongoose
+
+
+const songlists = new Schema({ 
     owner: {
         ref: 'User'
     },
@@ -8,14 +11,14 @@ const songlists = new mongoose.Schema({
         type: String
     },
     songs: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'savedSongs'
+        type: Schema.Types.ObjectId,
+        ref: 'songs'
     }]
 })
 
-module.exports = mongoose.model('songLists', songlists)
+const songLists = model('songLists', songlists)
 
-
+module.exports = songLists
 
 // songLists = {
 // 	owner: userId ref, // just like fruits,

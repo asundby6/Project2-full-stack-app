@@ -1,12 +1,14 @@
 ////////////////////
 //  Dependencies  //
 ////////////////////
-require("dotenv").config() // make env variables available
-const express = require("express")
+require('dotenv').config() // make env variables available
+const express = require('express')
 const middleware = require('./utils/middleware')
-
 const UserRouter = require('./controllers/user')
-const User = require("./models/user")
+const User = require('./models/user')
+const seed = require('./models/seed')
+// const savedSongs = require('./controllers/savedSongs')
+const songLists = require('./controllers/songLists')
 // SEE MORE DEPENDENCIES IN ./utils/middleware.js
 // user and resource routes linked in ./utils/middleware.js
 
@@ -22,7 +24,8 @@ middleware(app)
 ////////////////////
 
 app.use('/auth', UserRouter)
-
+app.use('/saved', savedSongs)
+app.use('/list', songLists)
 
 app.get('/', (req, res) => {
     const { username, userId, loggedIn } = req.session
