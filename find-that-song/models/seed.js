@@ -3,22 +3,32 @@ const songLists = require('./songLists')
 
 const db = mongoose.connection
 
-db.on('open', () => {
+// db.on('open', () => {
 
-    const songData = [{ 
-        title: {
-            type:  "The Weekend"
-        },
-        artist: { 
-            type: "Mac Miller"
-        },
-        song_id: {
-            type: "01"
-        },
-        lyrics: {
-            type: "testing lyrics"
-        } 
-    }]
+//     const songData = [{ 
+//         title: {
+//             type:  "The Weekend"
+//         },
+//         artist: { 
+//             type: "Mac Miller"
+//         },
+//         song_id: {
+//             type: "01"
+//         },
+//         lyrics: {
+//             type: "testing lyrics"
+//         } 
+//     }]
+
+db.on('open', () => {
+    // array of starter resources(fruits)
+    const songData = [
+        { name: 'Orange', color: 'orange', readyToEat: true },
+        { name: 'Grape', color: 'purple', readyToEat: true },
+        { name: 'Banana', color: 'green', readyToEat: false },
+        { name: 'Strawberry', color: 'red', readyToEat: false },
+        { name: 'Coconut', color: 'brown', readyToEat: true }
+    ]
     
     songLists.deleteMany({ owner: null })
         .then(() => {
