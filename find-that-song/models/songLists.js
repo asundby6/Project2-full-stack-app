@@ -5,14 +5,15 @@ const { Schema, model } = mongoose
 
 const songlists = new Schema({ 
     owner: {
-        ref: 'User'
+        type: Schema.Types.ObjectId,
+        ref: 'users'
     },
     name: {
         type: String
     },
     songs: [{
         type: Schema.Types.ObjectId,
-        ref: 'songs'
+        ref: 'savedSongs'
     }]
 })
 

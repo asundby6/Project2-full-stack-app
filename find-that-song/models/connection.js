@@ -8,10 +8,6 @@ mongoose.connect(process.env.DATABASE_URL, {
 	useUnifiedTopology: true,
 	useNewUrlParser: true,
 })
-// mongoose.connect('mongodb+srv://alecs:pickles@cluster1.r61u7yd.mongodb.net/?retryWrites=true&w=majority'),{
-// 	useUnifiedTopology: true,
-// 	useNewUrlParser: true,
-// }
 
 // save the connection in a variable
 const db = mongoose.connection
